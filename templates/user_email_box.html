@@ -1,0 +1,25 @@
+<div class="email_inbox">
+    <h3>
+        Email inbox
+        <span class="email_count">[{% if emails %}{{ emails|length }}{% else %}0{% endif %}]</span>
+        <a class="reload" href="/">reload</a>
+    </h3>
+
+    {% if emails %}
+        <div>{{ test_email }}</div>
+
+        {% for email in emails %}
+            <div>
+                <div class="email">
+                    <div>
+                        <span class="email_date">{{ email.created }}</span>
+                        <span class="email_subject">{{ email.subject }}</span>
+                    </div>
+                    <div>{{ email.html_content|safe }}</div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="text_info">You have no emails</div>
+    {% endif %}
+</div>

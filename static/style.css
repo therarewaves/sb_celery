@@ -1,0 +1,61 @@
+body {
+    background: #fff;
+    margin: 0;
+    padding: 1rem;
+}
+
+a, a:active, a:hover, a:visited {
+    color: #000000;
+}
+
+header {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header, div {
+    padding: .4rem 0;
+}
+
+.email {
+    display: inline-block;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    transition: .3s background-color;
+}
+
+.email:hover {
+    background-color: #ebfaf0;
+}
+
+.email_date {
+    font-size: .8rem;
+    margin-right: .4rem;
+}
+
+.email_subject {
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+.email_count {
+    color: #4d4d4d;
+    font-size: .9rem;
+}
+
+.text_info {
+    color: #135493;
+}
+
+a.reload {
+    color: #25963b;
+    font-weight: bold;
+    margin-left: .3rem;
+    transition: .3s color;
+}
+
+a.reload:hover {
+    color: #30b64b;
+}
